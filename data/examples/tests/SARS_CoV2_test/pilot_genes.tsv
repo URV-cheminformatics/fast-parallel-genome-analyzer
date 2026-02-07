@@ -1,0 +1,37 @@
+Gene_Name	Start_Pos	End_Pos	Description
+5_UTR	1	265	5' untranslated region
+leader	266	805	leader sequence
+nsp2	806	2719	nonstructural protein nsp2
+nsp3	2720	8554	nonstructural protein nsp3
+nsp4	8555	10054	nonstructural protein nsp4
+3C_like_protease	10055	10972	protein 3C_like_protease
+nsp6	10973	11842	nonstructural protein nsp6
+nsp7	11843	12091	nonstructural protein nsp7
+nsp8	12092	12685	nonstructural protein nsp8
+nsp9	12686	13024	nonstructural protein nsp9
+nsp10	13025	13441	nonstructural protein nsp10
+RNA_pol	13442	16236	RNA-dependent RNA polymerase RNA_pol
+helicase	16237	18039	protein helicase
+exonuclease	18040	19620	protein exonuclease
+endoRNAse	19621	20658	protein endoRNAse
+methyltransferase	20659	21552	protein methyltransferase
+5_spike	21553	21562	5' region of spike
+spike	21563	25384	protein spike
+5_ORF3a	25385	25392	5' region of ORF3a
+ORF3a	25393	26220	protein ORF3a
+5_E	26221	26244	5' region of E
+E	26245	26472	protein E
+5_M	26473	26522	5' region of M
+M	26523	27191	protein M
+5_ORF6	27192	27201	5' region of ORF6
+ORF6	27202	27387	protein ORF6
+5_ORF7a	27388	27393	5' region of ORF7a
+ORF7a	27394	27759	protein ORF7a
+ORF7b	27760	27887	protein ORF7b
+5_ORF8	27888	27893	5' region of ORF8
+ORF8	27894	28259	protein ORF8
+5_N	28260	28273	5' region of N
+N	28274	29533	protein N
+5_ORF10	29534	29557	5' region of ORF10
+ORF10	29558	29674	protein ORF10
+5_3_UTR	29675	29902	3' untranslated region

@@ -1,0 +1,15 @@
+Gene_Name	Start_Pos	End_Pos	Description
+5_UTR	1	106	5' untranslated region
+ancC	107	472	anchored capsid protein ancC
+pr	473	751	protein pr
+M	752	976	membrane glycoprotein M
+E	977	2476	envelope protein E
+NS1	2477	3532	nonstructural protein NS1
+NS2A	3533	4210	nonstructural protein NS2A
+NS2B	4211	4600	nonstructural protein NS2B
+NS3	4601	6451	nonstructural protein NS3
+NS4	6452	6832	nonstructural protein NS4A
+2K	6833	6901	protein 2K
+NS4B	6902	7654	nonstructural protein NS4B
+NS5	7655	10366	RNA-dependent RNA polymerase NS5
+3_UTR	10367	10794	3' untranslated region

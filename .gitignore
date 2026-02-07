@@ -1,0 +1,39 @@
+# Build artifacts
+build/
+out/
+bin/
+obj/
+.vs/
+.vscode/
+x64/
+Debug/
+Release/
+
+# Executables and Libraries
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.o
+*.obj
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Large Data & Results (Adjust as needed)
+*.tsv
+*.csv
+*.log
+!data/examples/*.tsv
+!data/**/*.tsv
+
+# Do not ignore the external library source code, but ignore its build
+external/parasail/build/

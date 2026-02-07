@@ -1,0 +1,10 @@
+query1: Start offset positiu (7 bases more et the begining of the sequence)
+query2: Start offset negatiu (8 bases less at the begining of the sequence)
+query3: Delta offset positiu (5 bases more in the first gene)
+query4: Delta offset negatiu (5 bases less in the first gene)
+query5: Delta offset positiu acumulat (2 bases more in each gene)
+query6: Delta offset negatiu acumulat (2 bases less in each gene). In the third gene, it makes sense to show 2 gaps at the beginning and one mismatch because it gives a better score than 2 deletions at position 3-4
+query7: Delta offset negatiu acumulat (2 bases less at the begining of each gene)
+query8: Delta offset positiu acumulat (2 bases more at the begining of each gene. It's about intergenic insertions, really)
+query9: Bases Y, R and N (cannot be compared) as insertion and mismatch. In the second gene, a very large region is placed at the beginning and the algorithm decides to take a part as an intergenic region and another as a mismatch, since it is the one that gives the best score
+query10: Characters outside the alphabet (cannot be compared), also in intergenic sections
