@@ -17,10 +17,8 @@
 ```text
 flashGeneAligner/
 ├── src/                # C++ Source code
-├── scripts/            # Python utility scripts
 ├── external/           # External libraries (Parasail)
 ├── data/               # Example data and references
-└── build/              # Compilation artifacts
 ```
 
 ## 🛠 Prerequisites
