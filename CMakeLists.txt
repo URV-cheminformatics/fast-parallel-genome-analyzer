@@ -42,11 +42,13 @@ else()
 endif()
 
 
-# Copy DLL to output directory
-add_custom_command(TARGET flashGenomeAligner POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different
-    "${PARASAIL_LIBRARY_DIR}/parasail.dll"
-    $<TARGET_FILE_DIR:flashGenomeAligner>
-)
+# Copy runtime library to output directory (Windows only)
+if(WIN32)
+  add_custom_command(TARGET flashGenomeAligner POST_BUILD
+      COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${PARASAIL_LIBRARY_DIR}/parasail.dll"
+      $<TARGET_FILE_DIR:flashGenomeAligner>
+  )
+endif()
 
 message(STATUS "Project configured. Build with --config Release for maximum performance.")
