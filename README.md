@@ -1,6 +1,6 @@
-# FlashGeneAligner 🧬
+# flashGenomeAligner 🧬
 
-**FlashGeneAligner** is an ultra-efficient, parallel C++ tool designed for rapid gene-by-gene alignment and comprehensive mutation analysis of viral genomes. Specifically optimized for Zika and Dengue viruses, it utilizes SIMD instructions (via the Parasail library) and OpenMP multithreading to achieve high-performance processing.
+**flashGenomeAligner** is an ultra-efficient, parallel C++ tool designed for rapid gene-by-gene alignment and comprehensive mutation analysis of viral genomes. Specifically optimized for Zika and Dengue viruses, it utilizes SIMD instructions (via the Parasail library) and OpenMP multithreading to achieve high-performance processing.
 
 ## 🚀 Features
 
@@ -15,7 +15,7 @@
 ## 📂 Project Structure
 
 ```text
-flashGeneAligner/
+flashGenomeAligner/
 ├── src/                # C++ Source code
 ├── external/           # External libraries (Parasail)
 ├── data/               # Example data and references
@@ -32,8 +32,8 @@ flashGeneAligner/
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YourUsername/flashGeneAligner.git
-    cd flashGeneAligner
+    git clone https://github.com/URV-cheminformatics/flashGenomeAligner.git
+    cd flashGenomeAligner
     ```
 
 2.  **Ensure Parasail is built/available:**
@@ -66,17 +66,17 @@ Once you have your files, run the tool from the command line:
 
 ```bash
 # General Syntax
-./flashGeneAligner <genes_layout.tsv> <reference.fasta> <query.fasta> [output_results.tsv]
+./flashGenomeAligner <genes_layout.tsv> <reference.fasta> <query.fasta> [output_results.tsv]
 
 # Example: Analyzing Zika Virus
-./flashGeneAligner data/Zika/genes.tsv data/Zika/ref.fasta data/Zika/samples.fasta results/zika_analysis.tsv
+./flashGenomeAligner data/Zika/genes.tsv data/Zika/ref.fasta data/Zika/samples.fasta results/zika_analysis.tsv
 ```
 
 ### Running the Default Test (SARS-CoV-2)
 If you run the program without arguments, it will execute the built-in SARS-CoV-2 pilot test located in `data/examples/tests/SARS_CoV2_test/`:
 
 ```bash
-./flashGeneAligner
+./flashGenomeAligner
 ```
 
 ## 📝 License
