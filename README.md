@@ -37,17 +37,40 @@ flashGenomeAligner/
     ```
 
 2.  **Ensure Parasail is built/available:**
-    (Since Parasail is an external dependency, make sure the `.lib` or `.dll` is available in `external/parasail/build` or updated in `CMakeLists.txt`).
+    This project uses Parasail for fast SIMD-optimized sequence alignment. The repository does not vendor Parasail by default, so you must clone and build it locally under `external/parasail`.
 
-3.  **Build with CMake (Recommended for Performance):**
+    ```bash
+    # From the project root
+    git clone https://github.com/jeffdaily/parasail.git external/parasail
+
+    # Build Parasail (Release)
+    cmake -S external/parasail -B external/parasail/build -DCMAKE_BUILD_TYPE=Release
+    cmake --build external/parasail/build -j
+    ```
+    On Linux/macOS the build will produce `external/parasail/build/libparasail.so` (or `.a`).
+    On Windows it will produce `parasail.lib` and/or `parasail.dll` depending on the generator/toolchain.
+
+4.  **Build with CMake (Recommended for Performance):**
     
     It is crucial to build in **Release** mode to enable compiler optimizations (O3/AVX2) and SIMD instructions. Debug builds will be significantly slower.
 
-    ```bash
-    # 1. Configure the project (only the first time or if you add files)
-    cmake -B build
+    **Linux / macOS (single-config generators: Makefiles, Ninja)**
 
-    # 2. Build in Release mode (optimized for speed)
+    ```bash
+    # Configure (Release)
+    cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+
+    # Build
+    cmake --build build -j
+    ```
+
+   **Windows (Visual Studio / multi-config generators)**
+
+    ```bash
+    # Configure (Visual Studio generator creates multi-config builds)
+    cmake -S . -B build
+
+    # Build Release
     cmake --build build --config Release
     ```
 
